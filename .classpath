@@ -7,5 +7,74 @@
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="/com.google.inject.guice"/>
+	<classpathentry kind="src" path="/edu.kit.ipd.sdq.eventsim.api"/>
+	<classpathentry kind="src" path="/edu.kit.ipd.sdq.eventsim.core"/>
+	<classpathentry kind="lib" path="/Users/layornos/eclipse/modeling-oxygen3a/Eclipse_Oxy3a.app/Contents/Eclipse/plugins/org.palladiosimulator.pcm_4.1.0.201709282114.jar" sourcepath="/Users/layornos/eclipse/modeling-oxygen3a/Eclipse_Oxy3a.app/Contents/Eclipse/plugins/org.palladiosimulator.pcm.source_4.1.0.201709282114.jar">
+		<accessrules>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/allocation/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/allocation/impl/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/allocation/util/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/core/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/core/composition/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/core/composition/impl/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/core/composition/util/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/core/entity/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/core/entity/impl/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/core/entity/util/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/core/impl/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/core/util/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/impl/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/parameter/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/parameter/impl/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/parameter/util/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/protocol/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/protocol/impl/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/protocol/util/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/qosannotations/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/qosannotations/impl/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/qosannotations/qos_performance/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/qosannotations/qos_performance/impl/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/qosannotations/qos_performance/util/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/qosannotations/qos_reliability/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/qosannotations/qos_reliability/impl/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/qosannotations/qos_reliability/util/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/qosannotations/util/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/reliability/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/reliability/impl/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/reliability/util/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/repository/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/repository/impl/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/repository/util/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/resourceenvironment/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/resourceenvironment/impl/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/resourceenvironment/util/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/resourcetype/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/resourcetype/impl/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/resourcetype/util/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/seff/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/seff/impl/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/seff/seff_performance/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/seff/seff_performance/impl/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/seff/seff_performance/util/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/seff/seff_reliability/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/seff/seff_reliability/impl/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/seff/seff_reliability/util/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/seff/util/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/stochasticexpressions/parser/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/subsystem/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/subsystem/impl/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/subsystem/util/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/system/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/system/impl/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/system/util/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/usagemodel/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/usagemodel/impl/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/usagemodel/util/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/util/*"/>
+			<accessrule ignoreifbetter="true" kind="nonaccessible" pattern="**/*"/>
+		</accessrules>
+	</classpathentry>
+	<classpathentry kind="src" path="/edu.kit.ipd.sdq.eventsim.system"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
