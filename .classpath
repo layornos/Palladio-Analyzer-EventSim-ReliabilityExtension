@@ -76,5 +76,30 @@
 		</accessrules>
 	</classpathentry>
 	<classpathentry kind="src" path="/edu.kit.ipd.sdq.eventsim.system"/>
+	<classpathentry kind="lib" path="/Users/layornos/eclipse/modeling-oxygen3a/Eclipse_Oxy3a.app/Contents/Eclipse/plugins/org.apache.log4j_1.2.15.v201012070815.jar" sourcepath="/Users/layornos/eclipse/modeling-oxygen3a/Eclipse_Oxy3a.app/Contents/Eclipse/plugins/org.apache.log4j_1.2.15.v201012070815.jar">
+		<accessrules>
+			<accessrule kind="accessible" pattern="org/apache/log4j/*"/>
+			<accessrule kind="accessible" pattern="org/apache/log4j/chainsaw/*"/>
+			<accessrule kind="accessible" pattern="org/apache/log4j/config/*"/>
+			<accessrule kind="accessible" pattern="org/apache/log4j/helpers/*"/>
+			<accessrule kind="accessible" pattern="org/apache/log4j/jdbc/*"/>
+			<accessrule kind="accessible" pattern="org/apache/log4j/jmx/*"/>
+			<accessrule kind="accessible" pattern="org/apache/log4j/lf5/*"/>
+			<accessrule kind="accessible" pattern="org/apache/log4j/lf5/util/*"/>
+			<accessrule kind="accessible" pattern="org/apache/log4j/lf5/viewer/*"/>
+			<accessrule kind="accessible" pattern="org/apache/log4j/lf5/viewer/categoryexplorer/*"/>
+			<accessrule kind="accessible" pattern="org/apache/log4j/lf5/viewer/configure/*"/>
+			<accessrule kind="accessible" pattern="org/apache/log4j/net/*"/>
+			<accessrule kind="accessible" pattern="org/apache/log4j/nt/*"/>
+			<accessrule kind="accessible" pattern="org/apache/log4j/or/*"/>
+			<accessrule kind="accessible" pattern="org/apache/log4j/or/jms/*"/>
+			<accessrule kind="accessible" pattern="org/apache/log4j/or/sax/*"/>
+			<accessrule kind="accessible" pattern="org/apache/log4j/spi/*"/>
+			<accessrule kind="accessible" pattern="org/apache/log4j/varia/*"/>
+			<accessrule kind="accessible" pattern="org/apache/log4j/xml/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/xtext/logging/*"/>
+			<accessrule ignoreifbetter="true" kind="nonaccessible" pattern="**/*"/>
+		</accessrules>
+	</classpathentry>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
