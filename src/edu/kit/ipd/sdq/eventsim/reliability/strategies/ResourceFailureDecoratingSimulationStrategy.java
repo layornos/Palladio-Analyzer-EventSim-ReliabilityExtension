@@ -33,7 +33,19 @@ public class ResourceFailureDecoratingSimulationStrategy
 
 	@Override
 	public void simulate(AbstractAction action, Request entity, Consumer<TraversalInstruction> onFinishCallback) {
-		// TODO Auto-generated method stub
+        /////////////////////////////////////////////////////////
+        // do something *before* decorated simulation strategy //
+        /////////////////////////////////////////////////////////
+		logger.fatal("in simulate method of ResourceFailureDecoratingSimulationStrategy");
+		
+		decorated.simulate(action, entity, traversalInstruction -> {
+            ////////////////////////////////////////////////////////
+            // do something *after* decorated simulation strategy //
+            ////////////////////////////////////////////////////////
+			logger.fatal("is decorated.simulate of ResourceFailureDecoratingSimulationStrategy");
+            // pass-though traversal instruction returned by decorated strategy
+            onFinishCallback.accept(traversalInstruction);
+        });
 
 	}
 
