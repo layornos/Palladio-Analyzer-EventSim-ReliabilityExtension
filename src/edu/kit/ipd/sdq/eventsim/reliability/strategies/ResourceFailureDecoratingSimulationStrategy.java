@@ -6,36 +6,34 @@ import org.palladiosimulator.pcm.seff.AbstractAction;
 
 import com.google.inject.Inject;
 
-import edu.kit.ipd.sdq.eventsim.api.ISimulationConfiguration;
-import edu.kit.ipd.sdq.eventsim.api.ISimulationMiddleware;
+import edu.kit.ipd.sdq.eventsim.api.IActiveResource;
+import edu.kit.ipd.sdq.eventsim.api.IPassiveResource;
 import edu.kit.ipd.sdq.eventsim.interpreter.DecoratingSimulationStrategy;
 import edu.kit.ipd.sdq.eventsim.interpreter.SimulationStrategy;
 import edu.kit.ipd.sdq.eventsim.interpreter.TraversalInstruction;
-import edu.kit.ipd.sdq.eventsim.system.entities.Request;
+import edu.kit.ipd.sdq.eventsim.resources.entities.SimActiveResource;
 
 public class ResourceFailureDecoratingSimulationStrategy
-		implements DecoratingSimulationStrategy<AbstractAction, Request> {
+		implements DecoratingSimulationStrategy<AbstractAction, SimActiveResource> {
 
 	private static final Logger logger = Logger.getLogger(ResourceFailureDecoratingSimulationStrategy.class);
 	
     @Inject
-    private ISimulationConfiguration configuration;
-
+    private IPassiveResource pr;
+    
     @Inject
-    private ISimulationMiddleware middleware;
+    private IActiveResource ar;
 
-	private SimulationStrategy<AbstractAction, Request> decorated;
-
-	@Override
-	public void decorate(SimulationStrategy<AbstractAction, Request> decorated) {
-		this.decorated = decorated;
-	}
+	private SimulationStrategy<AbstractAction, SimActiveResource> decorated;
 
 	@Override
-	public void simulate(AbstractAction action, Request entity, Consumer<TraversalInstruction> onFinishCallback) {
-        /////////////////////////////////////////////////////////
+	public void simulate(AbstractAction action, SimActiveResource entity,
+			Consumer<TraversalInstruction> onFinishCallback) {
+		/////////////////////////////////////////////////////////
         // do something *before* decorated simulation strategy //
         /////////////////////////////////////////////////////////
+		logger.debug("MTTF: " + entity.getMTTR());
+		logger.debug("MTTR: " + entity.getMTTF());
 		logger.fatal("in simulate method of ResourceFailureDecoratingSimulationStrategy");
 		
 		decorated.simulate(action, entity, traversalInstruction -> {
@@ -46,7 +44,12 @@ public class ResourceFailureDecoratingSimulationStrategy
             // pass-though traversal instruction returned by decorated strategy
             onFinishCallback.accept(traversalInstruction);
         });
+	}
 
+	@Override
+	public void decorate(SimulationStrategy<AbstractAction, SimActiveResource> decorated) {
+		this.decorated = decorated;
+		
 	}
 
 }

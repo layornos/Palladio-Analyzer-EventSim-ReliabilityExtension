@@ -3,6 +3,18 @@
 <plugin>
    <extension
          point="edu.kit.ipd.sdq.eventsim.module">
+          <simulation_module
+            guice_module="edu.kit.ipd.sdq.eventsim.reliability.ReliabilityExtensionModule"
+            id="edu.kit.ipd.sdq.eventsim.extensionexample"
+            launch_contribution="edu.kit.ipd.sdq.eventsim.reliability.launch.ReliabilityModuleLaunchContribution"
+            name="Reliability Simulation Module"
+            priority="10">
+         <simulation_strategy
+               action="org.palladiosimulator.pcm.seff.InternalAction"
+               name="InternalAction Decorator"
+               strategy="edu.kit.ipd.sdq.eventsim.reliability.strategies.ResourceFailureDecoratingSimulationStrategy">
+         </simulation_strategy>
+      </simulation_module>
    </extension>
 
 </plugin>
