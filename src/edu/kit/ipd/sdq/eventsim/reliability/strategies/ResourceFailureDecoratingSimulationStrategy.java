@@ -11,23 +11,17 @@ import edu.kit.ipd.sdq.eventsim.api.IPassiveResource;
 import edu.kit.ipd.sdq.eventsim.interpreter.DecoratingSimulationStrategy;
 import edu.kit.ipd.sdq.eventsim.interpreter.SimulationStrategy;
 import edu.kit.ipd.sdq.eventsim.interpreter.TraversalInstruction;
-import edu.kit.ipd.sdq.eventsim.resources.entities.SimActiveResource;
+import edu.kit.ipd.sdq.eventsim.reliability.entities.SimReliabilityActiveResource;
 
 public class ResourceFailureDecoratingSimulationStrategy
-		implements DecoratingSimulationStrategy<AbstractAction, SimActiveResource> {
+		implements DecoratingSimulationStrategy<AbstractAction, SimReliabilityActiveResource> {
 
 	private static final Logger logger = Logger.getLogger(ResourceFailureDecoratingSimulationStrategy.class);
-	
-    @Inject
-    private IPassiveResource pr;
-    
-    @Inject
-    private IActiveResource ar;
 
-	private SimulationStrategy<AbstractAction, SimActiveResource> decorated;
+	private SimulationStrategy<AbstractAction, SimReliabilityActiveResource> decorated;
 
 	@Override
-	public void simulate(AbstractAction action, SimActiveResource entity,
+	public void simulate(AbstractAction action, SimReliabilityActiveResource entity,
 			Consumer<TraversalInstruction> onFinishCallback) {
 		/////////////////////////////////////////////////////////
         // do something *before* decorated simulation strategy //
@@ -47,8 +41,8 @@ public class ResourceFailureDecoratingSimulationStrategy
 	}
 
 	@Override
-	public void decorate(SimulationStrategy<AbstractAction, SimActiveResource> decorated) {
-		this.decorated = decorated;
+	public void decorate(SimulationStrategy<AbstractAction, SimReliabilityActiveResource> decorated) {
+		// TODO Auto-generated method stub
 		
 	}
 
